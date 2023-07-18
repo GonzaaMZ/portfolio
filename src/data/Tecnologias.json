@@ -1,0 +1,47 @@
+[
+    {
+        "nombre": "PostgreSQL",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png",
+        "alt": "postgres"
+    },
+    {
+        "nombre": "Spring Boot",
+        "logo": "https://www.armadilloamarillo.com/wp-content/uploads/spring-boot-ok.png",
+        "alt": "spring"
+    },
+    {
+        "nombre": "MySQL",
+        "logo": "https://d1.awsstatic.com/asset-repository/products/amazon-rds/1024px-MySQL.ff87215b43fd7292af172e2a5d9b844217262571.png",
+        "alt": "mysql"
+    },
+    {
+        "nombre": "MongoDB",
+        "logo": "https://victorroblesweb.es/wp-content/uploads/2016/11/mongodb.png",
+        "alt": "mongodb"
+    },
+    {
+        "nombre": "React",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png",
+        "alt": "react"
+    },
+    {
+        "nombre": "NodeJs",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png",
+        "alt": "nodejs"
+    },
+    {
+        "nombre": "Material UI",
+        "logo": "https://mui.com/static/logo.png",
+        "alt": "mui"
+    },
+    {
+        "nombre": "Java",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png",
+        "alt": "java"
+    },
+    {
+        "nombre": "Docker",
+        "logo": "https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png",
+        "alt": "docker"
+    }
+]
