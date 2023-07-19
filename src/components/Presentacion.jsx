@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { Button, Grid, Grow, Typography, styled } from "@mui/material";
+import { Button, Grid, Typography, styled } from "@mui/material";
 import { useEffect, useState } from "react";
 
 const ImagenFondo = styled('img')(({ theme }) => ({

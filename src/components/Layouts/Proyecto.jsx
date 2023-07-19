@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { Grid, Tooltip, Typography, styled } from "@mui/material";
+import { Grid, Typography, styled } from "@mui/material";
 
 
 const Contenedor = styled(Grid)(({ theme }) => ({
