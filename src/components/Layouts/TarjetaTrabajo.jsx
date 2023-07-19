@@ -32,7 +32,7 @@ const TarjetaTrabajo = ({titulo, empresa, fecha, tiempo}) => {
                 <Typography variant="subtitle1" fontWeight={'bold'} fontStyle={'italic'}>Empresa: {empresa}</Typography>
                 <Typography variant="subtitle1">{fecha}</Typography>
             </Grid>
-            <Grid item xl={6} direction={'column'} alignContent={'center'}>
+            <Grid item xl={6} alignContent={'center'}>
                 <Typography variant="h5" fontWeight={'bold'}>{tiempo}</Typography>
             </Grid>
         </Contenedor>

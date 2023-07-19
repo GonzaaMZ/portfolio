@@ -33,7 +33,7 @@ const Proyecto = () => {
         <Contenedor container m={2}>
             <Grid width={'100%'} height={'100%'} item xl={6} lg={6} xs={12} md={12}>
                     <a href="https://cliente-api-futbol.vercel.app/">
-                        <Imagen component="a" src="../../../public/screenwikifubol.png" />
+                        <Imagen component="a" src="https://i.imgur.com/TeFApjJ.png" />
                     </a>
             </Grid>
             <Grid item xl={6} lg={6} xs={12} md={12}>
