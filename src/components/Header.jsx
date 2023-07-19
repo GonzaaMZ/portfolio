@@ -5,7 +5,10 @@ import { Button, Divider, Grid, Stack, styled } from "@mui/material";
 const Container = styled(Grid)(({ theme }) => ({
     height: '4.5rem',
     width: '100%',
-    backgroundColor: '#1F1465'
+    backgroundColor: '#1F1465',
+    [theme.breakpoints.down('md')]: {
+      height: '50vh',
+    }
 }))
 
 const BotonContacto = styled(Button)(({ theme }) => ({
@@ -17,6 +20,15 @@ const BotonContacto = styled(Button)(({ theme }) => ({
     },
 }))
 
+const Separador = styled(Divider)(({theme}) => ({
+    [theme.breakpoints.down('md')]: {
+      backgroundColor: 'white',
+    },
+    [theme.breakpoints.up('md')]: {
+      backgroundColor: 'white',
+      height: '2rem'
+    }
+}));
 
 
 const Header = () => {
@@ -59,19 +71,21 @@ const Header = () => {
 
 
     return (
-        <Container container direction="row"
+        <Container 
+        container
+        direction="row"
         justifyContent="center"
         alignItems="center">
             {/* <Grid item container direction={'row'} spacing={3}  alignItems="center"  justifyContent="center"> */}
-                <Stack direction={'row'} spacing={3}  alignItems="center"  justifyContent="center">
+                <Stack direction={{xs: 'column', md: 'row'}} spacing={3}  alignItems="center"  justifyContent="center">
                     <BotonContacto onClick={scrollAboutMe} >Sobre mi</BotonContacto>
-                    <Divider orientation="vertical" sx={{bgcolor: 'white', height: '1.3rem'}} />
+                    <Separador orientation={{xs: 'horizontal', md: 'vertical'}} flexItem={true}  />
                     <BotonContacto onClick={scrollSkills}>Skills</BotonContacto>
-                    <Divider orientation="vertical" sx={{bgcolor: 'white', height: '1.3rem'}} />
+                    <Separador orientation={{xs: 'horizontal', md: 'vertical'}} flexItem={true}  />
                     <BotonContacto onClick={scrollExperience}>Experiencia</BotonContacto>
-                    <Divider orientation="vertical" sx={{bgcolor: 'white', height: '1.3rem'}} />
+                    <Separador orientation={{xs: 'horizontal', md: 'vertical'}} flexItem={true}  />
                     <BotonContacto onClick={scrollPortfolio}>Proyectos</BotonContacto>
-                    <Divider orientation="vertical" sx={{bgcolor: 'white', height: '1.3rem'}} />
+                    <Separador orientation={{xs: 'horizontal', md: 'vertical'}} flexItem={true}  />
                     <BotonContacto onClick={scrollContact}>Contacto</BotonContacto>
                 </Stack>
             {/* </Grid> */}

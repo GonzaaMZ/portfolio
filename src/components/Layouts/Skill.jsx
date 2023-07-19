@@ -12,6 +12,10 @@ const Tecnologia = styled('img')(({ theme }) => ({
         background: 0,
         borderColor: '2px'
     },
+    [theme.breakpoints.down('md')]: {  
+        width: '3.5rem',
+        height: '3.5rem',
+    }
 }))
 
 const Skill = ({title, src, alt}) => {

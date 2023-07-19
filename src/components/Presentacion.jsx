@@ -1,17 +1,8 @@
 /* eslint-disable no-unused-vars */
 import { Button, Grid, Typography, styled } from "@mui/material";
-import { useEffect, useState } from "react";
-
-const ImagenFondo = styled('img')(({ theme }) => ({
-    width: '100%',
-    height: '100%',
-    objectPosition: "center",
-    OObjectFit: 'cover',
-    opacity: '0.55',
-}))
 
 const Container = styled(Grid)(({ theme }) => ({
-    height: '50rem',
+    height: '57rem',
     width: '100%',
     backgroundImage: "url('https://i.imgur.com/pFZLz7m.jpg')",
     backgroundSize: 'cover',
@@ -40,13 +31,6 @@ const BotonContacto = styled(Button)(({ theme }) => ({
 
 const Presentacion = () => {
 
-    const [checked, setChecked] = useState(false);
-
-    useEffect(() => {
-        setChecked(true);
-    }, [checked])
-
-
     return (
         <Container container>
             <Grid item>
@@ -56,9 +40,7 @@ const Presentacion = () => {
                 <a href="./CV_GONZALO_AMAYA_DEVELOPER.pdf" download>
                     <BotonContacto variant="h5">Descargar CV</BotonContacto>
                 </a>
-
             </Grid>
-            {/* <ImagenFondo src="../public/man-made-road-in-the-mountains-wallpaper.jpg"/> */}
         </Container>
     );
 }

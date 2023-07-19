@@ -26,7 +26,7 @@ const Experiencia = () => {
             <ContainerGrid >
                 <Grid item xl={12} md={12} xs={12} marginBottom={4}>
                     <Divider>
-                        <Typography component={'section'} id="experiencia_id" variant="h3" sx={{ textShadow: 'grey 2px 3px' }} textAlign={'center'}>Experiencia</Typography>
+                        <Typography component={'section'} id="experiencia_id" sx={{ textShadow: 'grey 2px 3px', typography: { md: 'h3', xs: 'h4' } }} textAlign={'center'}>Experiencia</Typography>
                     </Divider>
                 </Grid>
                 <Grid item xl={12} md={12} xs={12} display={'flex'} justifyContent="center">

@@ -21,19 +21,22 @@ const Contenedor = styled(Grid)(({theme}) => ({
         scale: '1.20',
         borderColor: '2px grey'
     },
+    [theme.breakpoints.down('md')]: {
+        height: '12rem',
+    }
 }))
 
 
 const TarjetaTrabajo = ({titulo, empresa, fecha, tiempo}) => {
     return ( 
         <Contenedor container>
-            <Grid item xl={6}>
+            <Grid item xl={6} md={6} xs={12}>
                 <Typography variant="h6">{titulo}</Typography>
                 <Typography variant="subtitle1" fontWeight={'bold'} fontStyle={'italic'}>Empresa: {empresa}</Typography>
                 <Typography variant="subtitle1">{fecha}</Typography>
             </Grid>
-            <Grid item xl={6} alignContent={'center'}>
-                <Typography variant="h5" fontWeight={'bold'}>{tiempo}</Typography>
+            <Grid item xl={6} md={6} xs={12} alignContent={'center'}>
+                <Typography marginTop={{xs: '2rem'}} variant="h5" fontWeight={'bold'}>{tiempo}</Typography>
             </Grid>
         </Contenedor>
      );

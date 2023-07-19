@@ -4,7 +4,14 @@ import { Avatar, Container, Divider, Grid, Typography, styled } from "@mui/mater
 
 const ContainerGrid = styled(Grid)(({ theme }) => ({
     width: '65%',
-
+    [theme.breakpoints.down('md')]: {
+        justifyContent: 'center',
+    },
+}))
+const ItemGrid = styled(Grid)(({ theme }) => ({
+    [theme.breakpoints.down('lg')]: {
+        width: '100%'
+    },
 }))
 const Contenedor = styled(Container)(({ theme }) => ({
     display: 'flex',
@@ -16,6 +23,31 @@ const Contenedor = styled(Container)(({ theme }) => ({
         scale: '1.12',
         borderColor: '2px grey'
     },
+    [theme.breakpoints.only('md')]: {
+        height: '55rem'
+    },
+    [theme.breakpoints.only('lg')]: {
+        height: '45rem'
+    },
+    [theme.breakpoints.only('sm')]: {
+        height: '50rem'
+    },
+    [theme.breakpoints.only('xs')]: {
+        height: '80rem'
+    }
+}))
+
+const Foto = styled(Avatar)(({theme}) => ({
+    [theme.breakpoints.down('md')]: {
+        justifyContent: 'center',
+        width: '12rem',
+        height: '12rem'
+    },
+    [theme.breakpoints.up('md')]: {
+        marginLeft: '2rem',
+        width: '15rem',
+        height: '15rem'
+    }
 }))
 
 const About = () => {
@@ -27,14 +59,13 @@ const About = () => {
                         <Typography component="section" id="about_id" variant="h3" sx={{ textShadow: 'grey 2px 3px' }} textAlign={'center'}>Sobre Mi</Typography>
                     </Divider>
                 </Grid>
-                <Grid item xl={6} md={5} xs={10} lg={5} sx={{ ml: 1 }}>
-                    <Avatar
-                        alt="Remy Sharp"
-                        src="/static/images/avatar/1.jpg"
-                        sx={{ width: '15rem', height: '15rem' }}
+                <ItemGrid display={'flex'} justifyContent={'center'} item xl={6} md={12} xs={12} lg={5} sx={{ ml: 1 }}>
+                    <Foto
+                        alt="fotoperfil"
+                        src="https://i.imgur.com/JsKY7oH.jpg"
                     />
-                </Grid>
-                <Grid item xl={5} md={5} xs={10} lg={5}>
+                </ItemGrid>
+                <Grid item xl={5} md={12} xs={12} lg={5}>
                     <Typography variant="body1">Bienvenido/a, Mi nombre es Gonzalo y actualmente me desempeño como Full Stack developer aunque considero mi especialidad Backend. 
 
 Mi formación autodidacta se ha conformado de múltiples cursos y formación online, también he participado de trabajos en grupo como Egg Educación y Alkemy.

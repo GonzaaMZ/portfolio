@@ -28,6 +28,9 @@ const BotonContacto = styled(Button)(({theme}) => ({
         scale: '1.12',
         boxShadow: '0 4px 16px rgba(49, 138, 172, 1)'
     },
+    [theme.breakpoints.down('xl')]: {
+        marginBottom: '1rem'
+    }
 }))
 
 const Contacto = () => {
@@ -39,10 +42,10 @@ const Contacto = () => {
                         <Typography id="contact_id" variant="h5" sx={{ textShadow: 'grey 1px 2px' }} textAlign={'center'}>Contacto</Typography>
                     </Divider>
                 </Grid>
-                <Grid item xs={12} xl={6}>
+                <Grid item xs={12} xl={6} lg={6}>
                         <BotonContacto variant="h5" href="mailto:gonzaloamaya1999@gmail.com">Contactame</BotonContacto>
                 </Grid>
-                <Grid item xs={12} xl={6}>
+                <Grid item xs={12} xl={6} lg={6}>
                         <IconButton href="https://github.com/GonzaaMZ"><GitHubIcon/></IconButton>
                         <IconButton href="https://www.linkedin.com/in/gonzaloamaya/"><LinkedInIcon/></IconButton>
                 </Grid>

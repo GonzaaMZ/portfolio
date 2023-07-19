@@ -13,11 +13,21 @@ const Contenedor = styled(Grid)(({ theme }) => ({
     textAlign: 'center',
     justifyContent: 'center',
     alignContent: 'center',
-    transition: '0.5s',
-    "&:hover": {
-        scale: '1.20',
-        borderColor: '2px grey'
+    // transition: '0.5s',
+    // "&:hover": {
+    //     scale: '1.20',
+    //     borderColor: '2px grey'
+    // },
+    [theme.breakpoints.down('md')]: {
+        // marginTop: '0.5rem',
+        width: '12rem',
+        height: '18rem',
     },
+    [theme.breakpoints.only('md')]: {
+        // marginTop: '0.5rem',
+        width: '21rem',
+        height: '20rem',
+    }
 }))
 
 const Imagen = styled('img')(({ theme }) => ({
@@ -25,18 +35,23 @@ const Imagen = styled('img')(({ theme }) => ({
     height: '100%',
     objectPosition: "center",
     OObjectFit: 'cover',
+    transition: '0.5s',
+    "&:hover": {
+        scale: '1.20',
+        borderColor: '2px grey'
+    },
 }))
 
 
 const Proyecto = () => {
     return (
         <Contenedor container m={2}>
-            <Grid width={'100%'} height={'100%'} item xl={6} lg={6} xs={12} md={12}>
+            <Grid width={'100%'} height={'100%'} item xl={6} lg={6} xs={12} md={6}>
                     <a href="https://cliente-api-futbol.vercel.app/">
                         <Imagen component="a" src="https://i.imgur.com/TeFApjJ.png" />
                     </a>
             </Grid>
-            <Grid item xl={6} lg={6} xs={12} md={12}>
+            <Grid item xl={6} lg={6} xs={12} md={6}>
                 <Typography variant="h6">Stack Utilizado</Typography>
                 <Typography variant="subtitle1" fontWeight={'bold'}>Backend: </Typography>
                 <Typography variant="body1" fontStyle={'italic'}>Java/Spring Boot</Typography>

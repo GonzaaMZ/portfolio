@@ -11,7 +11,10 @@ const Contenedor = styled(Container)(({ theme }) => ({
     justifyContent: 'center',
     padding: '1rem',
     height: '35rem',
-    backgroundColor: '#DEDDDD'
+    backgroundColor: '#DEDDDD',
+    [theme.breakpoints.down('md')]: {
+        height: '50rem',
+    }
 }))
 
 
@@ -21,10 +24,10 @@ const Portfolio = () => {
         <ContainerGrid container display={'flex'} justifyContent="center">
             <Grid item xl={12} md={12} xs={12} marginBottom={4}>
                 <Divider>
-                    <Typography component={'section'} id="portfolio_id" variant="h3" sx={{ textShadow: 'grey 2px 3px' }} textAlign={'center'}>Proyectos</Typography>
+                    <Typography component={'section'} id="portfolio_id"  sx={{ textShadow: 'grey 2px 3px', typography: { md: 'h3', xs: 'h4' } }} textAlign={'center'}>Proyectos</Typography>
                 </Divider>
             </Grid>
-            <Grid item xl={5} md={6} xs={12}>
+            <Grid item xl={5} md={6} xs={12} display={'flex'} justifyContent={'center'}>
                 <Proyecto/>
             </Grid>
             {/* <Grid item xl={5} md={6} xs={12}>

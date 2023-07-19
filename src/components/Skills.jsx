@@ -11,7 +11,10 @@ const Contenedor = styled(Container)(({ theme }) => ({
     justifyContent: 'center',
     padding: '1rem',
     height: '35rem',
-    backgroundColor: '#DEDDDD'
+    backgroundColor: '#DEDDDD',
+    [theme.breakpoints.only('xs')]: {  
+        height: '40rem',
+    }
 }))
 
 const Skills = () => {
@@ -25,7 +28,7 @@ const Skills = () => {
                     </Divider>
                 </Grid>
                 {Tecnologias.map((t) => (
-                    <Grid key={t.alt} item xl={3} md={4} xs={10} lg={4} textAlign={'center'} marginBottom={4}>
+                    <Grid key={t.alt} item xl={3} md={4} xs={6} lg={4} textAlign={'center'} marginBottom={4}>
                         <Skill title={t.nombre} src={t.logo} alt={t.alt} />
                     </Grid>
                 ))}
