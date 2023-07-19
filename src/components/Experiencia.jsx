@@ -11,17 +11,22 @@ const Contenedor = styled(Container)(({ theme }) => ({
     justifyContent: 'center',
     padding: '1rem',
     height: '35rem',
-    backgroundColor: 'white'
+    backgroundColor: 'white',
+    transition: '0.7s',
+    "&:hover": {
+        scale: '1.12',
+        borderColor: '2px grey'
+    },
 }))
 
 
 const Experiencia = () => {
     return (
-        <Contenedor container>
+        <Contenedor maxWidth="100%">
             <ContainerGrid >
                 <Grid item xl={12} md={12} xs={12} marginBottom={4}>
                     <Divider>
-                        <Typography variant="h3" sx={{ textShadow: 'grey 2px 3px' }} textAlign={'center'}>Experiencia</Typography>
+                        <Typography component={'section'} id="experiencia_id" variant="h3" sx={{ textShadow: 'grey 2px 3px' }} textAlign={'center'}>Experiencia</Typography>
                     </Divider>
                 </Grid>
                 <Grid item xl={12} md={12} xs={12} display={'flex'} justifyContent="center">

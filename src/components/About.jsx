@@ -11,6 +11,11 @@ const Contenedor = styled(Container)(({ theme }) => ({
     justifyContent: 'center',
     padding: '1rem',
     height: '30rem',
+    transition: '0.7s',
+    "&:hover": {
+        scale: '1.12',
+        borderColor: '2px grey'
+    },
 }))
 
 const About = () => {
@@ -19,7 +24,7 @@ const About = () => {
             <ContainerGrid container>
                 <Grid item xl={12} md={12} xs={12} marginBottom={4}>
                     <Divider>
-                        <Typography variant="h3" sx={{ textShadow: 'grey 2px 3px' }} textAlign={'center'}>Sobre Mi</Typography>
+                        <Typography component="section" id="about_id" variant="h3" sx={{ textShadow: 'grey 2px 3px' }} textAlign={'center'}>Sobre Mi</Typography>
                     </Divider>
                 </Grid>
                 <Grid item xl={6} md={5} xs={10} lg={5} sx={{ ml: 1 }}>
@@ -30,7 +35,13 @@ const About = () => {
                     />
                 </Grid>
                 <Grid item xl={5} md={5} xs={10} lg={5}>
-                    <Typography variant="h6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus culpa neque accusamus in odio, quae id illum debitis voluptatibus, totam ipsa exercitationem voluptates a commodi blanditiis illo ducimus facere soluta?</Typography>
+                    <Typography variant="body1">Bienvenido/a, Mi nombre es Gonzalo y actualmente me desempeño como Full Stack developer aunque considero mi especialidad Backend. 
+
+Mi formación autodidacta se ha conformado de múltiples cursos y formación online, también he participado de trabajos en grupo como Egg Educación y Alkemy.
+
+Forme parte del equipo de la startup afrus, una plataforma que ofrece soluciones a organizaciones sin fines de lucro desempeñándome como technical writer, QA tester y desarrollador con AdonisJs, VueJs y PostgreSQL como herramientas.
+
+Si deseas charlar conmigo acerca de cómo podría ayudar, colaborar o simplemente solicitar información sobre mí o sobre cualquiera de los trabajos expuestos en mi portafolio, por favor, contacta conmigo, estaré encantado de atenderte.</Typography>
                 </Grid>
             </ContainerGrid>
         </Contenedor>

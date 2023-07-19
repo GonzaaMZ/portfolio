@@ -21,7 +21,7 @@ const Skills = () => {
             <ContainerGrid container>
                 <Grid item xl={12} md={12} xs={12} marginBottom={4}>
                     <Divider>
-                        <Typography variant="h3" sx={{ textShadow: 'grey 2px 3px' }} textAlign={'center'}>Skills</Typography>
+                        <Typography component={'section'} id="skills_id" variant="h3" sx={{ textShadow: 'grey 2px 3px' }} textAlign={'center'}>Skills</Typography>
                     </Divider>
                 </Grid>
                 {Tecnologias.map((t) => (
