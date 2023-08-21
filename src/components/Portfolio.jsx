@@ -17,6 +17,30 @@ const Contenedor = styled(Container)(({ theme }) => ({
     }
 }))
 
+const wiki = {
+    backend: 'Java - Spring Boot',
+    frontend: 'React',
+    bd: 'PostgreSQL',
+    deploy: 'Railway - Vercel',
+    imagen: 'https://i.imgur.com/TeFApjJ.png',
+    url: 'https://cliente-api-futbol.vercel.app/',
+    herramientas: '-'
+}
+
+const catalogo = {
+    backend: 'Java - Spring Boot',
+    frontend: 'React - Redux',
+    bd: 'MongoDB',
+    deploy: 'en desarrollo',
+    imagen: 'https://i.imgur.com/SzYzMtp.jpg',
+    imgs: [
+        'https://i.imgur.com/SzYzMtp.jpg',
+        'https://i.imgur.com/bzQ1N4U.png',
+        'https://i.imgur.com/G6AUPmy.jpg',
+        'https://i.imgur.com/X5kBRI4.jpg'
+    ],
+    herramientas: 'Docker'
+}
 
 const Portfolio = () => {
     return ( 
@@ -28,11 +52,11 @@ const Portfolio = () => {
                 </Divider>
             </Grid>
             <Grid item xl={5} md={6} xs={12} display={'flex'} justifyContent={'center'}>
-                <Proyecto/>
+                <Proyecto proyecto={wiki}/>
             </Grid>
-            {/* <Grid item xl={5} md={6} xs={12}>
-                <Proyecto/>
-            </Grid> */}
+            <Grid item xl={5} md={6} xs={12}>
+                <Proyecto proyecto={catalogo}/>
+            </Grid>
         </ContainerGrid>
     </Contenedor>
      );
