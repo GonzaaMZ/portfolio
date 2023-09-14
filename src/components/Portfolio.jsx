@@ -10,7 +10,7 @@ const Contenedor = styled(Container)(({ theme }) => ({
     display: 'flex',
     justifyContent: 'center',
     padding: '1rem',
-    height: '35rem',
+    height: '50rem',
     backgroundColor: '#DEDDDD',
     [theme.breakpoints.down('md')]: {
         height: '50rem',
@@ -24,6 +24,16 @@ const wiki = {
     deploy: 'Railway - Vercel',
     imagen: 'https://i.imgur.com/TeFApjJ.png',
     url: 'https://cliente-api-futbol.vercel.app/',
+    herramientas: '-'
+}
+
+const gadev = {
+    backend: '-',
+    frontend: 'Astro',
+    bd: '',
+    deploy: 'Netlify',
+    imagen: 'https://i.imgur.com/RiIxfXH.jpg',
+    url: 'https://endearing-sunshine-8b0225.netlify.app/',
     herramientas: '-'
 }
 
@@ -56,6 +66,9 @@ const Portfolio = () => {
             </Grid>
             <Grid item xl={5} md={6} xs={12}>
                 <Proyecto proyecto={catalogo}/>
+            </Grid>
+            <Grid item xl={5} md={6} xs={12}>
+                <Proyecto proyecto={gadev}/>
             </Grid>
         </ContainerGrid>
     </Contenedor>
