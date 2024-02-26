@@ -43,7 +43,7 @@ const Contacto = () => {
                     </Divider>
                 </Grid>
                 <Grid item xs={12} xl={6} lg={6}>
-                        <BotonContacto variant="h5" href="mailto:gonzaloamaya1999@gmail.com">Contactame</BotonContacto>
+                        <span className="email">gonzaloamaya1999@gmail.com</span>
                 </Grid>
                 <Grid item xs={12} xl={6} lg={6}>
                         <IconButton href="https://github.com/GonzaaMZ"><GitHubIcon/></IconButton>
